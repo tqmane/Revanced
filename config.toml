@@ -29,7 +29,6 @@ rv-brand = "ReVanced Extended"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Custom Shorts action buttons' 'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Custom header for YouTube'"
-excluded-patches = "'Custom branding' 'Change header'"
 
 [Recorder]
 version = "auto"
