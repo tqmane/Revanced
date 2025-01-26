@@ -13,23 +13,23 @@ version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
-#[Music-Extended]
-#app-name = "Music"
-#patches-source = "inotia00/revanced-patches"
-#rv-brand = "ReVanced Extended"
-#build-mode = "both"
-#arch = "both"
-#excluded-patches = "'Custom branding icon for YouTube Music' 'Custom branding name for YouTube Music' 'Custom header for YouTube Music'"
-#apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+[Music-Extended]
+app-name = "Music"
+patches-source = "inotia00/revanced-patches"
+rv-brand = "ReVanced Extended"
+build-mode = "both"
+arch = "both"
+excluded-patches = "'Custom branding icon for YouTube Music' 'Custom branding name for YouTube Music' 'Custom header for YouTube Music'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
-#[YouTube-Extended]
-#app-name = "YouTube"
-#patches-source = "inotia00/revanced-patches"
-#rv-brand = "ReVanced Extended"
-#build-mode = "both"
-#apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-#excluded-patches = "'Custom Shorts action buttons' 'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Custom header for YouTube'"
-#excluded-patches = "'Custom branding' 'Change header'"
+[YouTube-Extended]
+app-name = "YouTube"
+patches-source = "inotia00/revanced-patches"
+rv-brand = "ReVanced Extended"
+build-mode = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+excluded-patches = "'Custom Shorts action buttons' 'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Custom header for YouTube'"
+excluded-patches = "'Custom branding' 'Change header'"
 
 [Recorder]
 version = "auto"
