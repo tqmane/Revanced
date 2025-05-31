@@ -1,6 +1,6 @@
 {
-  "version": "v7.22.0.739755607 (patches: 5.16.1)",
-  "versionCode": 8,
-  "zipUrl": "https://github.com/tqmane/Revanced/releases/download/8/googlephotos-revanced-magisk-v7.22.0.739755607-arm-v7a.zip",
+  "version": "v7.31.0.764984055 (patches: 5.25.0)",
+  "versionCode": 15,
+  "zipUrl": "https://github.com/tqmane/Revanced/releases/download/15/googlephotos-revanced-magisk-v7.31.0.764984055-arm-v7a.zip",
   "changelog": "https://raw.githubusercontent.com/tqmane/Revanced/update/build.md"
 }
