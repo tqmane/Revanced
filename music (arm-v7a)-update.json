@@ -1,6 +1,6 @@
 {
-  "version": "v8.10.52 (patches 5.41.0)",
-  "versionCode": 31,
-  "zipUrl": "https://github.com/tqmane/Revanced/releases/download/31/music-revanced-magisk-v8.10.52-arm-v7a.zip",
+  "version": "v8.10.52 (patches 5.42.1)",
+  "versionCode": 33,
+  "zipUrl": "https://github.com/tqmane/Revanced/releases/download/33/music-revanced-magisk-v8.10.52-arm-v7a.zip",
   "changelog": "https://raw.githubusercontent.com/tqmane/Revanced/update/build.md"
 }
