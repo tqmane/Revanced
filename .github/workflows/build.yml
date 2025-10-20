@@ -25,6 +25,11 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Install dependencies for antisplit-apkm
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y aapt zipalign
+
       - name: Update config
         if: ${{ inputs.from_ci }}
         run: |

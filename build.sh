@@ -52,6 +52,28 @@ if [ "$(echo "$TEMP_DIR"/*-rv/changelog.md)" ]; then
 	: >"$TEMP_DIR"/*-rv/changelog.md || :
 fi
 
+# APKMirror .apkm Auto-Processing
+pr "Checking for .apkm files..."
+if [ -f "antisplit-apkm.sh" ]; then
+	for apkm_file in *.apkm; do
+		if [ -f "$apkm_file" ]; then
+			pr "Processing .apkm file: $apkm_file"
+			apk_output="${apkm_file%.apkm}.apk"
+			
+			if ./antisplit-apkm.sh "$apkm_file" "$apk_output"; then
+				pr "✅ AntiSplit completed: $apk_output"
+				# 元の.apkmを削除 (オプション)
+				# rm "$apkm_file"
+			else
+				epr "❌ AntiSplit failed: $apkm_file"
+				# 失敗しても続行
+			fi
+		fi
+	done
+else
+	pr "antisplit-apkm.sh not found. Skipping .apkm processing."
+fi
+
 mkdir -p ${MODULE_TEMPLATE_DIR}/bin/arm64 ${MODULE_TEMPLATE_DIR}/bin/arm ${MODULE_TEMPLATE_DIR}/bin/x86 ${MODULE_TEMPLATE_DIR}/bin/x64
 gh_dl "${MODULE_TEMPLATE_DIR}/bin/arm64/cmpr" "https://github.com/j-hc/cmpr/releases/latest/download/cmpr-arm64-v8a"
 gh_dl "${MODULE_TEMPLATE_DIR}/bin/arm/cmpr" "https://github.com/j-hc/cmpr/releases/latest/download/cmpr-armeabi-v7a"

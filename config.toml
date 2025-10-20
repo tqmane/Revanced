@@ -55,31 +55,36 @@ build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Swipe controls' 'Change header'"
 
-# OnePlus 9 Pro用
+# Blackmagic Camera - OnePlus 9 Pro用
+# APKMirrorからダウンロード (.apkm形式を自動変換)
 [blackmagic-oneplus9pro]
+enabled = true
 app-name = "Blackmagic Camera (OP9Pro)"
-apk-source = "com.blackmagicdesign.android.blackmagiccam"
+# APKMirrorからダウンロード (.apkmが自動的に.apkに変換されます)
+apkmirror-dlurl = "https://www.apkmirror.com/apk/blackmagic-design-inc/blackmagic-camera/blackmagic-camera-3-1-0-release/"
 build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "1.0.0"
 cli-version = "4.6.0"
-cli-source = "ReVanced/revanced-cli" 
-included-patches = ["Change package name", "Filter camera IDs"]
+cli-source = "ReVanced/revanced-cli"
+included-patches = "'Change package name' 'Filter camera IDs'"
 
 [blackmagic-oneplus9pro.options]
 packageName = "com.google.android.GoogleCameraEng.blackmagic.op9pro"
 cameraIdsToFilter = "4"
 
-# OnePlus 9用
+# Blackmagic Camera - OnePlus 9用
 [blackmagic-oneplus9]
+enabled = true
 app-name = "Blackmagic Camera (OP9)"
-apk-source = "com.blackmagicdesign.android.blackmagiccam"
+# APKMirrorからダウンロード (.apkmが自動的に.apkに変換されます)
+apkmirror-dlurl = "https://www.apkmirror.com/apk/blackmagic-design-inc/blackmagic-camera/blackmagic-camera-3-1-0-release/"
 build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "1.0.0"
 cli-version = "4.6.0"
-cli-source = "ReVanced/revanced-cli" 
-included-patches = ["Change package name", "Filter camera IDs"]
+cli-source = "ReVanced/revanced-cli"
+included-patches = "'Change package name' 'Filter camera IDs'"
 
 [blackmagic-oneplus9.options]
 packageName = "com.google.android.GoogleCameraEng.blackmagic.op9"
