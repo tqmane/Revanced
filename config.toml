@@ -54,3 +54,20 @@ rv-brand = "ReVanced Extended"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Swipe controls' 'Change header'"
+
+[blackmagic-camera]
+app-name = "Blackmagic Camera"
+apk-source = "com.blackmagicdesign.android.blackmagiccam"
+build-mode = "apk"
+# カスタムパッチJARを指定
+patches-source = "tqmane/blackmagic-revanced-patches"
+patches-version = "1.0.0"
+
+# パッチオプション
+included-patches = ["Change package name", "Filter camera IDs"]
+
+[blackmagic-camera.options]
+# パッケージ名変更
+packageName = "com.google.android.GoogleCameraEng.blackmagic"
+# OnePlus 9 Pro用 (Camera ID 4 除外)
+cameraIdsToFilter = "4"
