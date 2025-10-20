@@ -69,7 +69,7 @@ build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "v1.0.0"
 cli-version = "v4.6.0"
-cli-source = "ReVanced/revanced-cli"
+# cli-source = "ReVanced/revanced-cli"
 included-patches = "'Change package name' 'Filter camera IDs'"
 
 [blackmagic-oneplus9pro.options]
@@ -86,7 +86,7 @@ build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "v1.0.0"
 cli-version = "v4.6.0"
-cli-source = "ReVanced/revanced-cli"
+# cli-source = "ReVanced/revanced-cli"
 included-patches = "'Change package name' 'Filter camera IDs'"
 
 [blackmagic-oneplus9.options]
