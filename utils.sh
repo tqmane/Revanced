@@ -81,12 +81,12 @@ get_rv_prebuilts() {
 		file=$(find "$dir" -name "${fprefix}-${name_ver#v}.${ext}" -type f 2>/dev/null)
 		if [ -z "$file" ]; then
 			local resp asset name
-			resp=$(gh_req "$rv_rel" -) || return 1
-			tag_name=$(jq -r '.tag_name' <<<"$resp")
-			asset=$(jq -e -r ".assets[] | select(.name | endswith(\"$ext\"))" <<<"$resp") || return 1
-			url=$(jq -r .browser_download_url <<<"$asset")
-			name=$(jq -r .name <<<"$asset")
-			file="${dir}/${name}"
+		resp=$(gh_req "$rv_rel" -) || return 1
+		tag_name=$(jq -r '.tag_name' <<<"$resp")
+		asset=$(jq -e -r ".assets[] | select(.name | endswith(\"$ext\"))" <<<"$resp") || return 1
+		url=$(jq -r .url <<<"$asset")
+		name=$(jq -r .name <<<"$asset")
+		file="${dir}/${name}"
 			gh_dl "$file" "$url" >&2 || return 1
 			echo "$tag: $(cut -d/ -f1 <<<"$src")/${name}  " >>"${cl_dir}/changelog.md"
 		else
