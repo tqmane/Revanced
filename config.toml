@@ -68,8 +68,8 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/blackmagic-design-inc/blackmagi
 build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "v1.0.0"
-# cli-version = "v4.6.0"
-cli-source = "tqmane/revanced-cli"
+cli-version = "v4.6.0"
+cli-source = "j-hc/revanced-cli"
 included-patches = "'Change package name' 'Filter camera IDs'"
 
 [blackmagic-oneplus9pro.options]
@@ -85,8 +85,8 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/blackmagic-design-inc/blackmagi
 build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "v1.0.0"
-# cli-version = "v4.6.0"
-cli-source = "tqmane/revanced-cli"
+cli-version = "v4.6.0"
+cli-source = "j-hc/revanced-cli"
 included-patches = "'Change package name' 'Filter camera IDs'"
 
 [blackmagic-oneplus9.options]
