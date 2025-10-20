@@ -55,19 +55,30 @@ build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Swipe controls' 'Change header'"
 
-[blackmagic-camera]
-app-name = "Blackmagic Camera"
+# OnePlus 9 Pro用
+[blackmagic-oneplus9pro]
+app-name = "Blackmagic Camera (OP9Pro)"
 apk-source = "com.blackmagicdesign.android.blackmagiccam"
 build-mode = "apk"
-# カスタムパッチJARを指定
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "1.0.0"
-
-# パッチオプション
+cli-version = "4.6.0"
 included-patches = ["Change package name", "Filter camera IDs"]
 
-[blackmagic-camera.options]
-# パッケージ名変更
-packageName = "com.google.android.GoogleCameraEng.blackmagic"
-# OnePlus 9 Pro用 (Camera ID 4 除外)
+[blackmagic-oneplus9pro.options]
+packageName = "com.google.android.GoogleCameraEng.blackmagic.op9pro"
 cameraIdsToFilter = "4"
+
+# OnePlus 9用
+[blackmagic-oneplus9]
+app-name = "Blackmagic Camera (OP9)"
+apk-source = "com.blackmagicdesign.android.blackmagiccam"
+build-mode = "apk"
+patches-source = "tqmane/blackmagic-revanced-patches"
+patches-version = "1.0.0"
+cli-version = "4.6.0"
+included-patches = ["Change package name", "Filter camera IDs"]
+
+[blackmagic-oneplus9.options]
+packageName = "com.google.android.GoogleCameraEng.blackmagic.op9"
+cameraIdsToFilter = "3"
