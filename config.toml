@@ -65,7 +65,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/blackmagic-design-inc/blackmagi
 build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "1.0.0"
-cli-version = "4.6.0"
+cli-version = "v4.6.0"
 cli-source = "ReVanced/revanced-cli"
 included-patches = "'Change package name' 'Filter camera IDs'"
 
@@ -82,7 +82,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/blackmagic-design-inc/blackmagi
 build-mode = "apk"
 patches-source = "tqmane/blackmagic-revanced-patches"
 patches-version = "1.0.0"
-cli-version = "4.6.0"
+cli-version = "v4.6.0"
 cli-source = "ReVanced/revanced-cli"
 included-patches = "'Change package name' 'Filter camera IDs'"
 
